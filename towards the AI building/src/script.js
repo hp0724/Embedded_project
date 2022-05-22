@@ -72,6 +72,8 @@ function preload() {
 }
 
 function create() {
+
+	
 	// intro
 	if(level == -1){ //intro1
 		this.add.image(0, 0, 'intro1').setOrigin(0).setScrollFactor(0);
@@ -95,7 +97,7 @@ function create() {
 	// draw background
 	else if(level == 1)
 		this.add.image(0, 0, 'stage1').setOrigin(0).setScrollFactor(0);
-	else if(level == 2)
+	else if (level == 2)
 		this.add.image(0, 0, 'stage2').setOrigin(0).setScrollFactor(0);
 	else if(level == 3)
 		this.add.image(0, 0, 'stage3').setOrigin(0).setScrollFactor(0);
@@ -188,6 +190,7 @@ function update() {
 		if (cursor.up.isDown && player.body.touching.down) {
 			player.body.setVelocityY(-400);
 		}
+		 
 	}
 }
 // 레벨마다 맵 다르게 설정하는것 
