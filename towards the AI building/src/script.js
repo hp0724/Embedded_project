@@ -108,7 +108,6 @@ function create() {
 		this.add.image(0, 0, 'outro1').setOrigin(0).setScrollFactor(0);
 	}
 
-	 
 	scoreText = this.add.text(15, 15, " ", {
 		fontSize: "32px",
 		fill: "#000",
